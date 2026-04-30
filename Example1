@@ -1,0 +1,8 @@
+```{r}
+library(evolved)
+
+timeseries_fossil |>
+  group_by(stem_age) |>
+  ggplot(aes(x = richness, fill = source)) +
+  geom_histogram()
+```
